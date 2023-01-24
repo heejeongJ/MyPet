@@ -1,0 +1,10 @@
+<!-- 로딩 화면2 - 로고버전 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/some_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="some_id"
+    />
+
