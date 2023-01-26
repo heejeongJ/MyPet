@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586458186572",
+    "project_id": "mypet-c241f",
+    "storage_bucket": "mypet-c241f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586458186572:android:025d95a9c43afec6e985e9",
+        "android_client_info": {
+          "package_name": "com.MyPet.MyPet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586458186572-keuc4kg9f99cvnk894osi6e8c75oqcsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4eJWoF9AvOZlbiu8HuQ0eXEj2dUEzDhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586458186572-keuc4kg9f99cvnk894osi6e8c75oqcsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
