@@ -1,6 +1,7 @@
 package com.example.mypet
 
 import android.content.Context
+import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -31,8 +32,13 @@ class SignUpNLogIn : AppCompatActivity() {
         var idText = findViewById<EditText>(R.id.logInIdEditText)
         var passwordText = findViewById<EditText>(R.id.logInPassWordEditText)
         var loginB = findViewById<Button>(R.id.loginB)
-
+        var registerB = findViewById<Button>(R.id.signupB)
+        registerB.setOnClickListener{
+            val nextIntent = Intent(this, SignUp::class.java)
+            startActivity(nextIntent)
+        }
         initDB()
+
 
         loginB.setOnClickListener{
             id = idText.text.toString()

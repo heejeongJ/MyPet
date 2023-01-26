@@ -49,7 +49,7 @@
         android:id="@+id/loginB"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="sns 로그인"
+        android:text="로그인"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="241dp" />
@@ -80,14 +80,14 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <ImageView
+    <Button
         android:id="@+id/signupB"
+        android:text="회원가입"
         android:layout_width="253dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="37dp"
-        app:srcCompat="@drawable/signupg" />
+        android:layout_marginBottom="37dp" />
 
 </RelativeLayout>
 
