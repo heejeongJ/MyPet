@@ -28,7 +28,7 @@
         android:layout_marginTop="198dp"
         android:background="@drawable/border"
         android:ems="12"
-        android:hint="  아이디를 입력해주세요."
+        android:hint="아이디를 입력해주세요."
         android:inputType="textPersonName"
         android:typeface="sans" />
 
@@ -43,16 +43,16 @@
         android:ems="12"
         android:hint="  비밀번호를 입력해주세요."
         android:inputType="textPassword"
-        android:typeface="sans" />
+         />
 
-    <ImageView
+    <Button
         android:id="@+id/loginB"
-        android:layout_width="251dp"
+        android:layout_width="366dp"
         android:layout_height="wrap_content"
+        android:text="sns 로그인"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="241dp"
-        app:srcCompat="@drawable/loging" />
+        android:layout_marginBottom="241dp" />
 
     <TextView
         android:id="@+id/snsLogin"
