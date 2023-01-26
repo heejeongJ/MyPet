@@ -9,7 +9,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -20,7 +19,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPet"
         tools:targetApi="31"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:usesCleartextTraffic="true">
+
+        <!-- kakao map app key 추가-->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="d7800c30f5c4a585cbae2ee2ceb42d53"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -34,10 +40,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
 
-            <!-- kakao map app key 추가-->
-            <meta-data
-                android:name="com.kakao.sdk.AppKey"
-                android:value="d7800c30f5c4a585cbae2ee2ceb42d53"/>
         </activity>
     </application>
 
