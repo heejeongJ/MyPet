@@ -8,7 +8,7 @@ xmlns:tools="http://schemas.android.com/tools">
             android:layout_height="match_parent"
             tools:context=".MainActivity">
 
-                <Button
+                <Buttons
                     android:id="@+id/naver_login_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
