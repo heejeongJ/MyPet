@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPet"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="1w2vj7b5pw" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
