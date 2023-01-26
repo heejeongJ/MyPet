@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="323sp"
+        android:layout_height="53sp"
+        android:layout_marginBottom="8dp"
+        android:text="마이펫의 \n정보를 입력해주세요!"
+        android:textColor="#4A4747"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/information2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <TextView
+        android:id="@+id/information2"
+        android:layout_width="323sp"
+        android:layout_height="38sp"
+        android:text="마이펫의 정보가 아직 입력되지 \n않았습니다..."
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <ImageView
+        android:id="@+id/vectorImg"
+        android:layout_width="113dp"
+        android:layout_height="103dp"
+        app:srcCompat="@drawable/vector"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
