@@ -34,11 +34,11 @@ class SignUpNLogIn : AppCompatActivity() {
         var loginB = findViewById<Button>(R.id.loginB)
         var registerB = findViewById<Button>(R.id.signupB)
         registerB.setOnClickListener{
-            val nextIntent = Intent(this, SignUpNLogIn::class.java)
+            val nextIntent = Intent(this, SignUp::class.java)
             startActivity(nextIntent)
         }
-        initDB()
 
+        initDB()
 
         loginB.setOnClickListener{
             id = idText.text.toString()

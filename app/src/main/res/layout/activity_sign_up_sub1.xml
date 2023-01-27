@@ -11,15 +11,17 @@
         android:id="@+id/signUpNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
         android:background="@drawable/buttonborder"
         android:backgroundTint="#FF913F"
         android:text="다 음"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintTop_toBottomOf="@+id/signUpEditT" />
 
     <EditText
         android:id="@+id/signUpEditT"
@@ -27,13 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/border"
         android:ems="16"
-
         android:hint=" 이메일을 입력해주세요!"
         android:inputType="textPersonName"
         android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/signUpNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeT" />
@@ -42,12 +45,19 @@
         android:id="@+id/welcomeT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="1dp"
         android:text="마이펫에 오신것을 환영합니다! "
         android:textColor="#949494"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintBottom_toTopOf="@+id/signUpEditT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpT" />
 
     <TextView
         android:id="@+id/signUpT"
@@ -55,11 +65,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="sans-serif"
         android:text="이메일을 입력해주세요!"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeT"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
