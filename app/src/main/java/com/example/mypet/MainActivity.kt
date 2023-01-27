@@ -20,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, SignUpNLogIn::class.java)
             startActivity(nextIntent)
         }
+
+        var goToPetRegistration = findViewById<Button>(R.id.button6)
+        goToPetRegistration.setOnClickListener{
+            val nextIntent = Intent(this, PetRegistration::class.java)
+            startActivity(nextIntent)
+        }
     }
 }
