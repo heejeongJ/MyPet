@@ -11,18 +11,20 @@ class dbHelper {
 //    lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
-    fun selectSql(sql: String, myHelper: myDBHelper) : String{
+    fun selectSql(sql: String, myHelper: myDBHelper) : Cursor{
         sqlDB = myHelper.readableDatabase
         var cursor: Cursor
 
         cursor = sqlDB.rawQuery(sql, null)
-        while (cursor.moveToNext()){
-            if (cursor.getString(1) == null){
-                Log.d("dd", "no")
-            }
-        }
-        sqlDB.close()
-        return "complete select"
+//        while (cursor.moveToNext()){
+//            if (cursor.getString(1) == null){
+//                Log.d("dd", "no")
+//            } else {
+//                sqlDB.close()
+//                return cursor
+//            }
+//        }
+        return cursor
     }
 
     fun insertSql(sql: String, myHelper: myDBHelper): String{
