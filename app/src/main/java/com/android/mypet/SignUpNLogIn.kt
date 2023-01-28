@@ -1,4 +1,4 @@
-package com.example.mypet
+package com.android.mypet
 
 import android.content.Context
 import android.content.Intent
@@ -10,8 +10,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ImageView
 
 class SignUpNLogIn : AppCompatActivity() {
 

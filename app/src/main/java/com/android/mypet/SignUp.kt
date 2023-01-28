@@ -1,11 +1,11 @@
-package com.example.mypet
+package com.android.mypet
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class SignUp_sub1 : AppCompatActivity() {
+class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up_sub1)
+        setContentView(R.layout.activity_sign_up)
     }
 }
