@@ -2,6 +2,7 @@ package com.android.mypet
 
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -45,14 +46,19 @@ class PetRegistration : AppCompatActivity() {
         // DBManager 객체 받음
         dbManager = DBManager(this, "petinfo", null, 1)
 
+        var pKinds : String = ""
+        dogButton.setOnClickListener {
+            pKinds = dogButton.text.toString()
+            dogButton.setTextColor(Color.DKGRAY)
+        }
+        catButton.setOnClickListener {
+            pKinds = catButton.text.toString()
+            catButton.setTextColor(Color.DKGRAY)
+        }
+
         saveButton.setOnClickListener {
-            var pKinds : String = ""
-            dogButton.setOnClickListener {
-                pKinds = dogButton.text.toString()
-            }
-            catButton.setOnClickListener {
-                pKinds = catButton.text.toString()
-            }
+
+
 
             var pName : String = nameET.text.toString()
             var pBirth : String = birthET.text.toString()

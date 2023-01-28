@@ -23,6 +23,5 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, PetRegistration::class.java)
             startActivity(nextIntent)
         }
-
     }
 }
