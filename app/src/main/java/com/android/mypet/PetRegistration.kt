@@ -1,4 +1,4 @@
-package com.example.mypet
+package com.android.mypet
 
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/informationT"
+        android:layout_width="323sp"
+        android:layout_height="53sp"
+        android:layout_marginStart="32dp"
+        android:text="마이펫의 \n정보를 입력해주세요!"
+        android:textColor="#4A4747"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+        android:id="@+id/informationT2"
+        android:layout_width="323sp"
+        android:layout_height="38sp"
+        android:layout_marginStart="32dp"
+        android:text="마이펫의 정보가 아직 입력되지 \n않았습니다..."
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <ImageButton
+        android:id="@+id/vectorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/vector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="295dp"
+        android:contentDescription="vector 버튼"
+        tools:ignore="MissingConstraints"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
