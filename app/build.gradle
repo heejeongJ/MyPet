@@ -4,6 +4,10 @@ plugins {
 }
 
 android {
+
+    viewBinding {
+        enabled true
+    }
     namespace 'com.example.mypet'
     compileSdk 32
 
