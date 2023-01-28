@@ -1,9 +1,11 @@
-package com.android.mypet
+package com.example.mypet
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.mypet.R
+import com.example.mypet.SignUpNLogIn
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,5 +25,12 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, PetRegistration::class.java)
             startActivity(nextIntent)
         }
+
+        var myPageGo = findViewById<Button>(R.id.myPageB)
+        myPageGo.setOnClickListener{
+            var mypageIntent = Intent(this, MyPage::class.java)
+            startActivity(mypageIntent)
+        }
     }
+
 }

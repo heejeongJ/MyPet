@@ -1,4 +1,4 @@
-package com.android.mypet
+package com.example.mypet
 
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import com.android.mypet.DBManager
+import com.example.mypet.R
 
 class PetRegistration : AppCompatActivity() {
 
