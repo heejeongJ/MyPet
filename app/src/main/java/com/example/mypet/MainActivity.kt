@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+<<<<<<< HEAD
 import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
@@ -23,5 +24,29 @@ class MainActivity : AppCompatActivity() {
             db!!.execSQL("DROP TABLE IF EXISTS groupTBL")
             onCreate(db)
         }
+=======
+
+class MainActivity : AppCompatActivity() {
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        var go = findViewById<Button>(R.id.button5)
+        go.setOnClickListener{
+            val nextIntent = Intent(this, SignUpNLogIn::class.java)
+            startActivity(nextIntent)
+        }
+
+        var myPageGo = findViewById<Button>(R.id.myPageB)
+        myPageGo.setOnClickListener{
+            var mypageIntent = Intent(this, MyPage::class.java)
+            startActivity(mypageIntent)
+        }
+
+
+
+>>>>>>> 034ab3d184a8d7c81cdb8ba94a21c83ccde65639
     }
 }

@@ -5,5 +5,9 @@
     <item> <shape> <padding android:top="0dp" android:right="2dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="10dp" /> <solid android:color="#8DDBDBDB" /> </shape> </item>
     <item> <shape> <padding android:top="0dp" android:right="2dp" android:bottom="2dp" android:left="0dp" /> <corners android:radius="10dp" /> <solid android:color="#57DFDFDF" /> </shape> </item>
     <!-- Background -->
+<<<<<<< HEAD
     <item> <shape> <solid android:color="#F8F8F8" /> <corners android:radius="10dp" /> </shape> </item>
+=======
+    <item> <shape> <solid android:color="#BBBBBB" /> <corners android:radius="10dp" /> </shape> </item>
+>>>>>>> 034ab3d184a8d7c81cdb8ba94a21c83ccde65639
 </layer-list>
