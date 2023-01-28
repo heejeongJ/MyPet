@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace 'com.android.mypet'
+    namespace 'com.example.mypet'
     compileSdk 33
 
     defaultConfig {
