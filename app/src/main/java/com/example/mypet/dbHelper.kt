@@ -8,7 +8,7 @@ import android.util.Log
 
 class dbHelper {
 
-//    lateinit var myHelper: myDBHelper
+    //    lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
     fun selectSql(sql: String, myHelper: myDBHelper) : Cursor{
