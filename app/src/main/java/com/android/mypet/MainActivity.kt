@@ -1,12 +1,11 @@
-package com.example.mypet
+package com.android.mypet
 
-import android.content.Context
 import android.content.Intent
-import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteOpenHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.mypet.MyPage
+import com.example.mypet.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,5 +25,11 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, PetRegistration::class.java)
             startActivity(nextIntent)
         }
+        var myPageGo = findViewById<Button>(R.id.myPageB)
+        myPageGo.setOnClickListener{
+            var mypageIntent = Intent(this, MyPage::class.java)
+            startActivity(mypageIntent)
+        }
+
     }
 }

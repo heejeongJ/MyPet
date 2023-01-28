@@ -11,6 +11,7 @@
         android:id="@+id/signUpText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
         android:fontFamily="sans-serif-medium"
         android:text="아래 버튼을 클릭하여 약관을 확인해주세요."
         android:textColor="#000000"
@@ -19,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="425dp" />
+
 
     <TextView
         android:id="@+id/signUpText"
@@ -59,6 +61,8 @@
         android:id="@+id/signUpButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/buttonborder"
         android:backgroundTint="#FF913F"
         android:text="약관 확인하기"
@@ -69,10 +73,14 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="465dp" />
 
+
+
     <Button
         android:id="@+id/signUpButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="27dp"
         android:background="@drawable/buttonborder"
         android:backgroundTint="#FF913F"
         android:text="동의하고 가입하기"
@@ -82,6 +90,7 @@
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="526dp" />
+
 
     <ImageView
         android:id="@+id/signUpLogoImage"
