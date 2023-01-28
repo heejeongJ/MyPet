@@ -44,7 +44,7 @@ open class LocationTrackingActivity : AppCompatActivity(), OnMapReadyCallback {
     // naverMap 객체가 준비되면 실행 됨
     override fun onMapReady(naverMap: NaverMap) {
         this.naverMap = naverMap
-        naverMap.locationSource = locationSource
+        naverMap.locationSource = locationSource // 위치 추적
         naverMap.maxZoom = 18.0 // zoom max/min 제한
         naverMap.minZoom = 10.0
         naverMap.locationTrackingMode = LocationTrackingMode.Follow
@@ -56,11 +56,11 @@ open class LocationTrackingActivity : AppCompatActivity(), OnMapReadyCallback {
                                             grantResults: IntArray) {
         if (locationSource.onRequestPermissionsResult(requestCode, permissions,
                 grantResults)) {
-            if (!locationSource.isActivated) { // 권한이 거부 되었다면
+            if (!locationSource.isActivated) { // 권한 거부
                 naverMap.locationTrackingMode = LocationTrackingMode.None
                 return
             }
-            else{ // 권한이 허용되었다면
+            else{ // 권한 허용
                 naverMap.locationTrackingMode = LocationTrackingMode.Follow
             }
         }
