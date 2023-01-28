@@ -19,8 +19,7 @@ class SharePage: AppCompatActivity() {
     lateinit var shareIdEditT:EditText
     lateinit var shareButton: Button
 
-    lateinit var myHelper: myDBHelper1
-    lateinit var sqlDB:SQLiteDatabase
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +27,8 @@ class SharePage: AppCompatActivity() {
 
         puppyImg = findViewById(R.id.puppyImg)
         puppyNameT=findViewById(R.id.puppyNameT)
-        shareIdT=findViewById(R.id.shareIdT)
-        shareT=findViewById(R.id.shareT)
         shareIdEditT=findViewById(R.id.shareIdEditT)
         shareButton=findViewById(R.id.shareButton)
 
-        myHelper = myDBHelper1(this)
     }
 }
