@@ -1,6 +1,7 @@
-package com.android.mypet
+package com.example.mypet
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -10,18 +11,15 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 
 class SignUpNLogIn : AppCompatActivity() {
-
-    lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
     lateinit var id : String
     lateinit var password : String
-
-    fun initDB(){
-        myHelper = myDBHelper(this)
-    }
-
+    lateinit var dbhelper : dbHelper.myDBHelper
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -32,32 +30,47 @@ class SignUpNLogIn : AppCompatActivity() {
         var loginB = findViewById<Button>(R.id.loginB)
         var registerB = findViewById<Button>(R.id.signupB)
         registerB.setOnClickListener{
-            val nextIntent = Intent(this, SignUpNLogIn::class.java)
+            val nextIntent = Intent(this, SignUp::class.java)
             startActivity(nextIntent)
         }
-        initDB()
-
 
         loginB.setOnClickListener{
             id = idText.text.toString()
             password = passwordText.text.toString()
 
-            sqlDB = myHelper.readableDatabase
-            var cursor: Cursor
+            dbhelper = dbHelper().myDBHelper(this)
+            var sql = "SELECT * FROM USER WHERE userid=${id}"
 
-            cursor = sqlDB.rawQuery("SELECT * FROM USER WHERE userid=${id}", null)
-            while(cursor.moveToNext()){
-                if (cursor.getString(1) == null) {
-                    Log.d("id", "no id")
-                } else {
-                    if (cursor.getString(3) == password) {
-                        Log.d("id", cursor.getString(1))
-                        Log.d("notify", "로그인이 정상적으로 되었습니다")
-                    } else {
-                        Log.d("notify: ", "비밀번호를 확인해주세요")
-                    }
+
+            var login_cursor = dbHelper().selectSql(sql, dbhelper)
+
+            while (login_cursor.moveToNext()){
+                if (login_cursor.getString(1) == null){
+                    val builder = AlertDialog.Builder(this)
+                    builder.setTitle("로그인 실패")
+                        .setMessage("일치하는 회원정보가 없습니다. 회원가입을 진행해주세요.")
+                        .setPositiveButton("Start", DialogInterface.OnClickListener({
+//                    메인화면으로 넘기기
+                                dialog, id -> Intent(this, SignUpNLogIn::class.java)
+                        }))
+                    builder.create()
+                    builder.show()
+                } else if (login_cursor.getString(2) == id && login_cursor.getString(3) == password) {
+                    val builder = AlertDialog.Builder(this)
+                    builder.setTitle("로그인 성공")
+                        .setMessage("${login_cursor.getString(1)} 님, 로그인이 완료되었습니다! ")
+                        .setPositiveButton("Start", DialogInterface.OnClickListener({
+//                    메인화면으로 넘기기
+                                dialog, id -> Intent(this, SignUpNLogIn::class.java)
+                        }))
+                    builder.create()
+                    builder.show()
                 }
             }
+
+
+
+
 
         }
 

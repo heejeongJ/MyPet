@@ -1,322 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="1700dp"
+    android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:orientation="vertical"
-    tools:context=".PetRegistration">
+    tools:context=".SignUp_sub1">
 
-    <ScrollView
-        android:id="@+id/scroll"
-        android:layout_width="match_parent"
-        android:layout_height="740dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-1dp">
+    <Button
+        android:id="@+id/signUpNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
+        android:background="@drawable/buttonborder"
+        android:backgroundTint="#FF913F"
+        android:text="다 음"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEditT" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:orientation="vertical"
-            tools:context=".PetRegistration">
+    <EditText
+        android:id="@+id/signUpEditT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/border"
+        android:ems="16"
+        android:hint=" 이메일을 입력해주세요!"
+        android:inputType="textPersonName"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/signUpNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeT" />
 
-            <ImageView
-                android:id="@+id/plusProfile"
-                android:layout_width="83dp"
-                android:layout_height="82dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="50dp"
-                app:layout_constraintBottom_toTopOf="@+id/button3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/profile" />
+    <TextView
+        android:id="@+id/welcomeT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="1dp"
+        android:text="마이펫에 오신것을 환영합니다! "
+        android:textColor="#949494"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signUpEditT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpT" />
 
-            <!-- 종류 선택-->
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="29dp"
-                android:layout_height="34dp"
-                android:layout_marginTop="64dp"
-                android:layout_marginEnd="148dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/plus" />
-
-            <TextView
-                android:id="@+id/kindsT"
-                android:layout_width="32dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="120dp"
-                android:text="종류"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.084"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <!-- 이름 입력 받기 -->
-
-            <TextView
-                android:id="@+id/requiredT3"
-                android:layout_width="14dp"
-                android:layout_height="19dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="320dp"
-                android:text="*"
-                android:textColor="#F13838"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameET" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
-                android:layout_width="151dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/shadow"
-                android:backgroundTint="#F8F8F8"
-                android:text="강아지"
-                android:textColor="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/button2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kindsT" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
-                android:layout_width="151dp"
-                android:layout_height="63dp"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="51dp"
-                android:layout_marginEnd="47dp"
-                android:background="@drawable/shadow"
-                android:backgroundTint="#F8F8F8"
-                android:text="고양이"
-                android:textColor="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/button3"
-                app:layout_constraintTop_toBottomOf="@+id/plusProfile" />
-
-            <TextView
-                android:id="@+id/nameT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="5dp"
-                android:text="이름"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/requiredT2"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-            <TextView
-                android:id="@+id/requiredT2"
-                android:layout_width="14dp"
-                android:layout_height="19dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="332dp"
-                android:text="*"
-                android:textColor="#F13838"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/nameT"
-                app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-            <EditText
-                android:id="@+id/nameET"
-                android:layout_width="333dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/shadow"
-                android:hint="이름, 영문, 숫자 8자 이내 입력"
-                android:textAlignment="center"
-                android:textColor="#949494"
-                android:textColorHint="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameT" />
-
-            <!-- 생일 입력 받기 -->
-
-
-            <TextView
-                android:id="@+id/birthT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="38dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="4dp"
-                android:text="생일"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/requiredT3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameET" />
-
-            <TextView
-                android:id="@+id/requiredT1"
-                android:layout_width="14dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginEnd="333dp"
-                android:text="*"
-                android:textColor="#F13838"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/kindsT"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/birthET"
-                android:layout_width="333dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/shadow"
-                android:hint="0000.00.00"
-                android:textAlignment="center"
-                android:textColor="#949494"
-                android:textColorHint="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/birthT" />
-
-            <!-- 함께 하기 시작한 날짜 입력 받기 -->
-
-            <TextView
-                android:id="@+id/startdT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="38dp"
-                android:layout_marginTop="40dp"
-                android:text="함께 하기 시작한 날짜"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/birthET" />
-
-            <EditText
-                android:id="@+id/startdET"
-                android:layout_width="333dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/shadow"
-                android:hint="0000.00.00"
-                android:textAlignment="center"
-                android:textColor="#949494"
-                android:textColorHint="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/startdT" />
-
-            <!-- 몸무게 -->
-
-            <TextView
-                android:id="@+id/weightT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="26dp"
-                android:text="몸무게"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/startdET" />
-
-            <EditText
-                android:id="@+id/weightET"
-                android:layout_width="333dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="1dp"
-                android:background="@drawable/shadow"
-                android:hint="입력해주세요."
-                android:textAlignment="center"
-                android:textColor="#949494"
-                android:textColorHint="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/weightT" />
-
-            <!-- 질병 여부 -->
-
-            <!-- 정보 저장 버튼 -->
-
-            <TextView
-                android:id="@+id/diseaseT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="38dp"
-                android:layout_marginTop="33dp"
-                android:text="질병 여부"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/weightET" />
-
-            <EditText
-                android:id="@+id/diseaseET"
-                android:layout_width="333dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/shadow"
-                android:hint="입력해주세요."
-                android:textAlignment="center"
-                android:textColor="#949494"
-                android:textColorHint="#949494"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/diseaseT" />
-
-            <Button
-                android:id="@+id/saveButton"
-                android:layout_width="339dp"
-                android:layout_height="57dp"
-                android:layout_marginStart="37dp"
-                android:layout_marginTop="65dp"
-                android:layout_marginBottom="150dp"
-                android:background="@drawable/shadow"
-                android:fontFamily="sans-serif"
-                android:text="저 장"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/diseaseET" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
-
-</LinearLayout>
+    <TextView
+        android:id="@+id/signUpT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif"
+        android:text="이메일을 입력해주세요!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

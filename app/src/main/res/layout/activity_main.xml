@@ -26,5 +26,16 @@
         android:layout_marginTop="67dp"
         android:layout_marginEnd="104dp"
         android:text="반려동물 등록 화면 임시" />
+
+    <Button
+        android:id="@+id/myPageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="258dp"
+        android:text="mypage" />
 </RelativeLayout>
 
