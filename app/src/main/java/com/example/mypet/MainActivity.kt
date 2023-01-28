@@ -20,5 +20,14 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, SignUpNLogIn::class.java)
             startActivity(nextIntent)
         }
+
+        var myPageGo = findViewById<Button>(R.id.myPageB)
+        myPageGo.setOnClickListener{
+            var mypageIntent = Intent(this, MyPage::class.java)
+            startActivity(mypageIntent)
+        }
+
+
+
     }
 }

@@ -15,5 +15,16 @@
         android:layout_marginEnd="157dp"
         android:layout_marginBottom="336dp"
         android:text="임시" />
+
+    <Button
+        android:id="@+id/myPageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="258dp"
+        android:text="mypage" />
 </RelativeLayout>
 
