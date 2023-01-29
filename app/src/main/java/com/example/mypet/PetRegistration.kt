@@ -1,4 +1,4 @@
-package com.android.mypet
+package com.example.mypet
 
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import com.example.mypet.R
 
 class PetRegistration : AppCompatActivity() {
 
@@ -31,6 +32,10 @@ class PetRegistration : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet_registration)
 
+        // 갤러리 이미지 uri를 SQLite에 저장하고 불러오는 방법 사용
+
+
+        // Button, Image, EditText 등 연결
         plusProfile = findViewById(R.id.plusProfile)
         plusB = findViewById(R.id.plusB)
         dogButton = findViewById(R.id.dogButton)

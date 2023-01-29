@@ -6,7 +6,7 @@
     android:layout_height="1700dp"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".PetRegistration">
+    tools:context="com.example.mypet.PetRegistration">
 
     <ScrollView
         android:id="@+id/scroll"
@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:background="#FFFFFF"
             android:orientation="vertical"
-            tools:context=".PetRegistration">
+            tools:context="com.example.mypet.PetRegistration">
 
             <!-- 프로필 사진 추가 -->
             <ImageView

@@ -1,4 +1,4 @@
-package com.android.mypet
+package com.example.mypet
 
 import org.junit.Test
 
