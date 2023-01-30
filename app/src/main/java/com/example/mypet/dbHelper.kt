@@ -33,7 +33,7 @@ class dbHelper {
         return "complete insert"
     }
 
-    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "test", null, 1){
+    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "test.db", null, 1){
         override fun onCreate(db: SQLiteDatabase?){
             db!!.execSQL("CREATE TABLE IF NOT EXISTS USER(id Integer PRIMARY KEY AUTOINCREMENT, userID VARCHAR(255), email VARCHAR(255), password VARCHAR(255))")
         }

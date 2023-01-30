@@ -37,7 +37,7 @@ class MainPage: AppCompatActivity() {
         }
         healthButton.setOnClickListener{
             //건강정보페이지로
-            var intent=Intent(this,MyPage::class.java)
+            var intent=Intent(this, MyPage::class.java)
             startActivity(intent)
         }
         mainButton.setOnClickListener{
