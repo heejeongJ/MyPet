@@ -26,8 +26,5 @@ class MainActivity : AppCompatActivity() {
             var mypageIntent = Intent(this, MyPage::class.java)
             startActivity(mypageIntent)
         }
-
-
-
     }
 }

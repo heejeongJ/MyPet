@@ -8,9 +8,6 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mypet.MainActivity.*
-import org.w3c.dom.Text
-import com.example.mypet.MainActivity.myDBHelper as myDBHelper1
 
 class SharePage: AppCompatActivity() {
 

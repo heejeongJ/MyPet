@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">MyPet</string>
-<<<<<<< HEAD
+    <string name="app_name">mypet</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-=======
->>>>>>> 034ab3d184a8d7c81cdb8ba94a21c83ccde65639
 </resources>
