@@ -42,7 +42,7 @@ class MainPage: AppCompatActivity() {
         }
         mainButton.setOnClickListener{
             //메인페이지로
-            var intent= Intent(this, MainPage::class.java)
+            var intent= Intent(this, PetRegistration::class.java)
             startActivity(intent)
         }
 

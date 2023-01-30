@@ -44,26 +44,26 @@ class MyPage : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mypage)
 
-//        var petinfo = findViewById<TextView>(R.id.cutData)
-//
-//        dbhelper = dbHelper().myDBHelper(this)
-////        petId 가져오기 - login session 통해서 petid 가져오기
-//        sql = "SELECT * FROM petInfo WHERE petId = 1"
-//        var cursur = dbHelper().selectSql(sql, dbhelper)
-//
-//        while (cursur.moveToNext()){
-//            petName = cursur.getString(1)
-//            petBirth = cursur.getString(2)
-//            petWithDate = cursur.getString(3)
-//            petWeight = cursur.getString(5)
-//        }
-//
-//        if (petName == null){
-//            petinfo.setText("아직 반려동물 등록이 완료되지 않았습니다! ")
-//        } else {
-//            var inputPetInfo = "이름: ${petName} \n생일: ${petBirth} \n함께 한 날:${petWithDate} \n무게: ${petWeight}"
-//            petinfo.setText(inputPetInfo)
-//        }
+        var petinfo = findViewById<TextView>(R.id.cutData)
+
+        dbhelper = dbHelper().myDBHelper(this)
+//        petId 가져오기 - login session 통해서 petid 가져오기
+        sql = "SELECT * FROM petInfo WHERE petId = 1"
+        var cursur = dbHelper().selectSql(sql, dbhelper)
+
+        while (cursur.moveToNext()){
+            petName = cursur.getString(1)
+            petBirth = cursur.getString(2)
+            petWithDate = cursur.getString(3)
+            petWeight = cursur.getString(5)
+        }
+
+        if (petName == null){
+            petinfo.setText("아직 반려동물 등록이 완료되지 않았습니다! ")
+        } else {
+            var inputPetInfo = "이름: ${petName} \n생일: ${petBirth} \n함께 한 날:${petWithDate} \n무게: ${petWeight}"
+            petinfo.setText(inputPetInfo)
+        }
 
 
 

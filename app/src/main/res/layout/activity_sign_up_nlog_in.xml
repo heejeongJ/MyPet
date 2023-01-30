@@ -42,8 +42,7 @@
         android:background="@drawable/border"
         android:ems="12"
         android:hint="  비밀번호를 입력해주세요."
-        android:inputType="textPassword"
-         />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/loginB"

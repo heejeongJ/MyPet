@@ -73,6 +73,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".Information"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 <!--        <activity-->
 <!--            android:name=".SignUpNLogIn"-->
 <!--            android:exported="false">-->

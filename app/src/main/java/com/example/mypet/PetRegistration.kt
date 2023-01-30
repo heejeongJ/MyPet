@@ -63,8 +63,6 @@ class PetRegistration : AppCompatActivity() {
 
         saveButton.setOnClickListener {
 
-
-
             var pName : String = nameET.text.toString()
             var pBirth : String = birthET.text.toString()
             var pStarted : String = startedET.text.toString()
@@ -77,7 +75,7 @@ class PetRegistration : AppCompatActivity() {
                 "', '"+pWeight+"', '"+ pDisease+"')")
             sqlitedb.close()
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainPage::class.java)
             intent.putExtra("intent_name", pName)
             startActivity(intent)
         }

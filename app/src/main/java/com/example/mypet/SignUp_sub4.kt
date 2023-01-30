@@ -36,14 +36,14 @@ class SignUp_sub4 : AppCompatActivity() {
 
         next.setOnClickListener{
             dbhelper = dbHelper().myDBHelper(this)
-            var sql = "INSERT INTO USER(email, userId, password, name) VALUES ('${email}', '${id}', '${password}', '${nameInput.text.toString()}')"
+            var sql = "INSERT INTO user(email, userId, password, name) VALUES ('${email}', '${id}', '${password}', '${nameInput.text.toString()}')"
             dbHelper().insertSql(sql, dbhelper)
             val builder = AlertDialog.Builder(this)
             builder.setTitle("회원가입 완료")
                 .setMessage("${email} 님, 회원가입이 완료되었습니다! ")
                 .setPositiveButton("Start", DialogInterface.OnClickListener({
 //                    메인화면으로 넘기기
-                    dialog, id -> Intent(this, SignUp_sub4::class.java)
+                    dialog, id -> Intent(this, MainPage::class.java)
                 }))
             builder.create()
             builder.show()

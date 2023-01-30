@@ -19,8 +19,8 @@ class Information: AppCompatActivity()  {
 
         vectorImg.setOnClickListener{
             //반려동물 등록화면으로
-            //var intent= Intent(this,:class.java)
-            //startActivity(intent)
+            var intent= Intent(this, PetRegistration::class.java)
+            startActivity(intent)
         }
 
       }
