@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/noteT"
+        android:layout_width="323sp"
+        android:layout_height="53sp"
+        android:text="우리집 찰스를 기록해요!"
+        android:textColor="#FF000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <TextView
+        android:id="@+id/noteT2"
+        android:layout_width="323sp"
+        android:layout_height="38sp"
+        android:text="찰스의 하루를 기록해요!"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ImageView
+        android:id="@+id/puppyImg2"
+        android:layout_width="400dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/healthButton"
+        android:layout_width="137dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shadow"
+        android:text="건강 상태"
+        android:textColor="#4A4747"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hospitalButton"
+        android:layout_width="137dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shadow"
+        android:text="근처병원"
+        android:textColor="#4A4747"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/todayChkButton"
+        android:layout_width="137dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shadow"
+        android:text="일일체크"
+        android:textColor="#4A4747"
+        app:layout_constraintEnd_toStartOf="@+id/hospitalButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainButton"
+        android:layout_width="137dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shadow"
+        android:text="메인페이지"
+        android:textColor="#4A4747"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
