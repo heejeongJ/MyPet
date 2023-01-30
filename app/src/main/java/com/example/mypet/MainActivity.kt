@@ -19,9 +19,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(nextIntent)
         }
 
-        var goToPetRegistration = findViewById<Button>(R.id.button6)
-        goToPetRegistration.setOnClickListener{
-            val nextIntent = Intent(this, PetRegistration::class.java)
+//        var goToPetRegistration = findViewById<Button>(R.id.button6)
+//        goToPetRegistration.setOnClickListener{
+//            val nextIntent = Intent(this, PetRegistration::class.java)
+//            startActivity(nextIntent)
+//        }
+
+        var myhpage = findViewById<Button>(R.id.myPageB)
+        myhpage.setOnClickListener{
+            val nextIntent = Intent(this, MyPage::class.java)
             startActivity(nextIntent)
         }
     }

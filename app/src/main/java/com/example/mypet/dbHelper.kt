@@ -47,13 +47,12 @@ class dbHelper {
         return byteArray
     }
 
-    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "user.db", null, 1){
+    inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "test.db", null, 1){
         override fun onCreate(db: SQLiteDatabase?){
-            db!!.execSQL("CREATE TABLE IF NOT EXISTS USER(id Integer PRIMARY KEY AUTOINCREMENT, userID VARCHAR(255), email VARCHAR(255), password VARCHAR(255))")
+            db!!.execSQL("CREATE TABLE IF NOT EXISTS user(id Integer PRIMARY KEY AUTOINCREMENT, userID VARCHAR(255), email VARCHAR(255), password VARCHAR(255))")
         }
         override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion : Int){
-            db!!.execSQL("DROP TABLE IF EXISTS USER")
-            onCreate(db)
+//
         }
     }
 }
