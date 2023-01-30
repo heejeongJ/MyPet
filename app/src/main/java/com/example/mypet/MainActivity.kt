@@ -1,12 +1,10 @@
 package com.example.mypet
 
-import android.content.Context
 import android.content.Intent
-import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteOpenHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.mypet.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,13 +19,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(nextIntent)
         }
 
-        var myPageGo = findViewById<Button>(R.id.myPageB)
-        myPageGo.setOnClickListener{
-            var mypageIntent = Intent(this, MyPage::class.java)
-            startActivity(mypageIntent)
+        var goToPetRegistration = findViewById<Button>(R.id.button6)
+        goToPetRegistration.setOnClickListener{
+            val nextIntent = Intent(this, PetRegistration::class.java)
+            startActivity(nextIntent)
         }
-
-
-
     }
 }
