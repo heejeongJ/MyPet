@@ -10,77 +10,97 @@
         android:id="@+id/noteT"
         android:layout_width="323sp"
         android:layout_height="53sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
         android:text="우리집 찰스를 기록해요!"
         android:textColor="#FF000000"
         android:textSize="19sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="43dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/noteT2"
         android:layout_width="323sp"
         android:layout_height="38sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="1dp"
         android:text="찰스의 하루를 기록해요!"
         android:textSize="14sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="75dp" />
+        app:layout_constraintBottom_toTopOf="@+id/puppyImg2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/puppyImg2"
         android:layout_width="400dp"
         android:layout_height="403dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/healthButton"
         android:layout_width="137dp"
         android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/shadow"
         android:text="건강 상태"
         android:textColor="#4A4747"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="477dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mainButton"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/hospitalButton"
         android:layout_width="137dp"
         android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/shadow"
         android:text="근처병원"
         android:textColor="#4A4747"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintBottom_toTopOf="@+id/mainButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/todayChkButton"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/todayChkButton"
         android:layout_width="137dp"
         android:layout_height="100dp"
+        android:layout_marginStart="50dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/shadow"
-        android:text="일일체크"
+        android:text="공유하기"
         android:textColor="#4A4747"
+        app:layout_constraintBottom_toTopOf="@+id/healthButton"
         app:layout_constraintEnd_toStartOf="@+id/hospitalButton"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/mainButton"
         android:layout_width="137dp"
         android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/shadow"
         android:text="메인페이지"
         android:textColor="#4A4747"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="477dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/healthButton"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

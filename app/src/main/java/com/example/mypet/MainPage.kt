@@ -26,9 +26,9 @@ class MainPage: AppCompatActivity() {
         mainButton = findViewById<Button>(R.id.mainButton)
 
         todayChkButton.setOnClickListener{
-            //캘린더페이지로
-           // var intent=Intent(this,::class.java)
-            //startActivity(intent)
+            //공유하기로 변경
+            var intent=Intent(this, SharePage::class.java)
+            startActivity(intent)
         }
         hospitalButton.setOnClickListener{
             //병원정보페이지로
@@ -37,13 +37,13 @@ class MainPage: AppCompatActivity() {
         }
         healthButton.setOnClickListener{
             //건강정보페이지로
-            //var intent=Intent(this,::class.java)
-            //startActivity(intent)
+            var intent=Intent(this,MyPage::class.java)
+            startActivity(intent)
         }
         mainButton.setOnClickListener{
             //메인페이지로
-            //var intent= Intent(this,::class.java)
-            //startActivity(intent)
+            var intent= Intent(this, MainPage::class.java)
+            startActivity(intent)
         }
 
     }
