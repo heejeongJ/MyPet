@@ -7,14 +7,15 @@
 
     <ImageView
         android:id="@+id/puppyImg"
-        android:layout_width="760dp"
+        android:layout_width="0dp"
         android:layout_height="280dp"
         android:layout_marginTop="100dp"
         app:layout_constraintBottom_toTopOf="@+id/puppyNameT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/puppy"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-171dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/puppyNameT"

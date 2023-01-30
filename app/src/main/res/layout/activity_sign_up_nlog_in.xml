@@ -47,12 +47,12 @@
 
     <Button
         android:id="@+id/loginB"
-        android:layout_width="366dp"
+        android:layout_width="253dp"
         android:layout_height="wrap_content"
-        android:text="로그인"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="241dp" />
+        android:layout_marginBottom="241dp"
+        android:text="로그인" />
 
     <TextView
         android:id="@+id/snsLogin"
