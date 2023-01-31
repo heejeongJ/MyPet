@@ -21,6 +21,7 @@ class SignUp_sub4 : AppCompatActivity() {
 
         var next = findViewById<Button>(R.id.signUpNextButton)
         var nameInput = findViewById<EditText>(R.id.signUpNT)
+        var home = findViewById<Button>(R.id.signUpNextButton2)
 
         if (intent.hasExtra("password")){
             id = intent.getStringExtra("id").toString()
@@ -48,5 +49,12 @@ class SignUp_sub4 : AppCompatActivity() {
             builder.create()
             builder.show()
         }
+
+        home.setOnClickListener{
+            var intent = Intent(this, Information::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

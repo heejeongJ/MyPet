@@ -35,9 +35,11 @@ class dbHelper {
 
     inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "test.db", null, 1){
         override fun onCreate(db: SQLiteDatabase?){
-            db!!.execSQL("CREATE TABLE IF NOT EXISTS USER(id Integer PRIMARY KEY AUTOINCREMENT, userID VARCHAR(255), email VARCHAR(255), password VARCHAR(255))")
+            db!!.execSQL("CREATE TABLE IF NOT EXISTS user(id Integer PRIMARY KEY AUTOINCREMENT, userId TEXT, email TEXT, password TEXT, name TEXT)")
         }
+
         override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion : Int){
+            onCreate(db)
         }
     }
 }

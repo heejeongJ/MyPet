@@ -62,7 +62,7 @@
         android:layout_marginBottom="198dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="sns 로그인"
-        android:textColor="#DD4A4747"
+        android:textColor="#DDFFFFFF"
         android:textSize="16sp"
         android:textStyle="bold" />
 
